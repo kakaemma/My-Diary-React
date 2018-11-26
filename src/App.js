@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
@@ -24,5 +25,23 @@ class App extends Component {
     );
   }
 }
+=======
+import React from 'react';
+import { Provider } from 'react-redux';
+import { BrowserRouter } from 'react-router-dom';
+import store from './store';
+import Routes from './components/routes';
+import './assets/App.css';
+
+const App = () => (
+  <Provider store={store}>
+    <React.Fragment>
+      <BrowserRouter>
+        <Routes />
+      </BrowserRouter>
+    </React.Fragment>
+  </Provider>
+);
+>>>>>>> d852d14... chore(setup project): setup react project for mydiary  …
 
 export default App;
