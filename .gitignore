@@ -22,7 +22,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-package-lock.json
+/package-lock.json
 .idea
 /src/tests/components/__snapshots__/
 src/tests/__snapshots__/

@@ -3,11 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-<<<<<<< HEAD
-    "react": "^16.6.3",
-    "react-dom": "^16.6.3",
-    "react-scripts": "2.1.1"
-=======
     "axios": "^0.18.0",
     "prop-types": "^15.6.2",
     "react": "^16.6.3",
@@ -17,15 +12,11 @@
     "react-scripts": "2.1.1",
     "redux": "^4.0.1",
     "redux-thunk": "^2.3.0"
->>>>>>> d852d14... chore(setup project): setup react project for mydiary  …
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-<<<<<<< HEAD
-=======
     "lint": "eslint src",
->>>>>>> d852d14... chore(setup project): setup react project for mydiary  …
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -37,18 +28,16 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-<<<<<<< HEAD
-  ]
-=======
   ],
   "devDependencies": {
     "babel-eslint": "^9.0.0",
+    "coveralls": "^3.0.2",
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.7.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-react-app": "^3.0.5",
-    "eslint-plugin-flowtype": "^3.2.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-react": "^7.11.1"
   }
->>>>>>> d852d14... chore(setup project): setup react project for mydiary  …
 }
