@@ -1,3 +1,5 @@
+[![Maintainability](https://api.codeclimate.com/v1/badges/ef8d67d8130427f1c0bd/maintainability)](https://codeclimate.com/github/kakaemma/My-Diary-React/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/ef8d67d8130427f1c0bd/test_coverage)](https://codeclimate.com/github/kakaemma/My-Diary-React/test_coverage) [![CircleCI](https://circleci.com/gh/kakaemma/My-Diary-React.svg?style=svg)](https://circleci.com/gh/kakaemma/My-Diary-React)
+
 ## My Diary
 MyDiary is an online journal where users can pen down their thoughts and feelings.
 
