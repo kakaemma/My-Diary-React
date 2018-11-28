@@ -1,4 +1,4 @@
-import { LOGIN_INITIATED, LOGIN_SUCCESS, LOGINN_ERROR } from '../actions/types';
+import { LOGIN_INITIATED, LOGIN_SUCCESS, LOGIN_ERROR } from '../actions/types';
 
 const initialState = {
   loading: false,
@@ -18,7 +18,7 @@ const userReducer = (state = initialState, action) => {
         ...state,
         isLoggedIn: true,
       };
-    case LOGINN_ERROR:
+    case LOGIN_ERROR:
       return {
         ...state,
         logginError: action.payload,
@@ -28,4 +28,5 @@ const userReducer = (state = initialState, action) => {
       return state;
   }
 };
+
 export default userReducer;

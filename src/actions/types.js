@@ -1,3 +1,3 @@
 export const LOGIN_INITIATED = 'LOGIN_INITIATED';
 export const LOGIN_SUCCESS = 'LOGIN_SUCCESS';
-export const LOGINN_ERROR = 'LOGIN_ERROR';
+export const LOGIN_ERROR = 'LOGIN_ERROR';

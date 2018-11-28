@@ -1,11 +1,11 @@
-import { LOGIN_INITIATED, LOGIN_SUCCESS, LOGINN_ERROR } from './types';
+import { LOGIN_INITIATED, LOGIN_SUCCESS, LOGIN_ERROR } from './types';
 
 export const loginInitiated = () => ({
   type: LOGIN_INITIATED,
 });
 
 export const loginError = (payload) => ({
-  type: LOGINN_ERROR,
+  type: LOGIN_ERROR,
   payload,
 });
 
