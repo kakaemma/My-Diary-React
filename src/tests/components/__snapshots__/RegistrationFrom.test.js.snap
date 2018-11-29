@@ -1,0 +1,1560 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RegistrationForm should render correctly 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <registrationForm
+    handleSubmit={[MockFunction]}
+    onchange={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <div
+        className="register"
+      >
+        <div
+          className="col-sm-5 registerHeader"
+        >
+          <h2>
+            Sign up
+          </h2>
+        </div>
+        <div
+          className="registerContent"
+        >
+          <div
+            className="smallNotes registerPanel"
+          >
+            <h3>
+              * Free account
+            </h3>
+            <p>
+              Create a free account and have access to your emotions and thoughts on the go
+            </p>
+            <hr />
+            <h3>
+              * Instant notifications
+            </h3>
+            <p>
+              Get notifications prompting you to add entries to your diary on a daily basis
+            </p>
+            <hr />
+            <h3>
+              Already have an account ?
+            </h3>
+            <p>
+              <Link
+                replace={false}
+                to="/"
+              >
+                 Sign in to your account 
+              </Link>
+            </p>
+          </div>
+          <div
+            className="col-sm-4 regSidebar"
+          >
+            <form
+              className="registerForm"
+              id="regForm"
+              onSubmit={[MockFunction]}
+            >
+              <div
+                className="form-group"
+              >
+                <label
+                  htmlFor="name"
+                >
+                  Name
+                </label>
+                <input
+                  className="formField"
+                  id="name"
+                  name="name"
+                  onChange={[MockFunction]}
+                  placeholder="Your name"
+                  required="required"
+                  type="text"
+                />
+              </div>
+              <div
+                className="form-group"
+              >
+                <input
+                  className="formField"
+                  name="email"
+                  onChange={[MockFunction]}
+                  placeholder="Email address"
+                  required="required"
+                  type="email"
+                />
+              </div>
+              <div
+                className="form-group"
+              >
+                <input
+                  className="formField"
+                  name="password"
+                  onChange={[MockFunction]}
+                  placeholder="Password"
+                  required="required"
+                  type="password"
+                />
+              </div>
+              <button
+                className="button puppleButton"
+                type="submit"
+                value="Sign in"
+              >
+                Sign up
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>,
+      "className": "container",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="col-sm-5 registerHeader"
+          >
+            <h2>
+              Sign up
+            </h2>
+          </div>,
+          <div
+            className="registerContent"
+          >
+            <div
+              className="smallNotes registerPanel"
+            >
+              <h3>
+                * Free account
+              </h3>
+              <p>
+                Create a free account and have access to your emotions and thoughts on the go
+              </p>
+              <hr />
+              <h3>
+                * Instant notifications
+              </h3>
+              <p>
+                Get notifications prompting you to add entries to your diary on a daily basis
+              </p>
+              <hr />
+              <h3>
+                Already have an account ?
+              </h3>
+              <p>
+                <Link
+                  replace={false}
+                  to="/"
+                >
+                   Sign in to your account 
+                </Link>
+              </p>
+            </div>
+            <div
+              className="col-sm-4 regSidebar"
+            >
+              <form
+                className="registerForm"
+                id="regForm"
+                onSubmit={[MockFunction]}
+              >
+                <div
+                  className="form-group"
+                >
+                  <label
+                    htmlFor="name"
+                  >
+                    Name
+                  </label>
+                  <input
+                    className="formField"
+                    id="name"
+                    name="name"
+                    onChange={[MockFunction]}
+                    placeholder="Your name"
+                    required="required"
+                    type="text"
+                  />
+                </div>
+                <div
+                  className="form-group"
+                >
+                  <input
+                    className="formField"
+                    name="email"
+                    onChange={[MockFunction]}
+                    placeholder="Email address"
+                    required="required"
+                    type="email"
+                  />
+                </div>
+                <div
+                  className="form-group"
+                >
+                  <input
+                    className="formField"
+                    name="password"
+                    onChange={[MockFunction]}
+                    placeholder="Password"
+                    required="required"
+                    type="password"
+                  />
+                </div>
+                <button
+                  className="button puppleButton"
+                  type="submit"
+                  value="Sign in"
+                >
+                  Sign up
+                </button>
+              </form>
+            </div>
+          </div>,
+        ],
+        "className": "register",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <h2>
+              Sign up
+            </h2>,
+            "className": "col-sm-5 registerHeader",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Sign up",
+            },
+            "ref": null,
+            "rendered": "Sign up",
+            "type": "h2",
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="smallNotes registerPanel"
+              >
+                <h3>
+                  * Free account
+                </h3>
+                <p>
+                  Create a free account and have access to your emotions and thoughts on the go
+                </p>
+                <hr />
+                <h3>
+                  * Instant notifications
+                </h3>
+                <p>
+                  Get notifications prompting you to add entries to your diary on a daily basis
+                </p>
+                <hr />
+                <h3>
+                  Already have an account ?
+                </h3>
+                <p>
+                  <Link
+                    replace={false}
+                    to="/"
+                  >
+                     Sign in to your account 
+                  </Link>
+                </p>
+              </div>,
+              <div
+                className="col-sm-4 regSidebar"
+              >
+                <form
+                  className="registerForm"
+                  id="regForm"
+                  onSubmit={[MockFunction]}
+                >
+                  <div
+                    className="form-group"
+                  >
+                    <label
+                      htmlFor="name"
+                    >
+                      Name
+                    </label>
+                    <input
+                      className="formField"
+                      id="name"
+                      name="name"
+                      onChange={[MockFunction]}
+                      placeholder="Your name"
+                      required="required"
+                      type="text"
+                    />
+                  </div>
+                  <div
+                    className="form-group"
+                  >
+                    <input
+                      className="formField"
+                      name="email"
+                      onChange={[MockFunction]}
+                      placeholder="Email address"
+                      required="required"
+                      type="email"
+                    />
+                  </div>
+                  <div
+                    className="form-group"
+                  >
+                    <input
+                      className="formField"
+                      name="password"
+                      onChange={[MockFunction]}
+                      placeholder="Password"
+                      required="required"
+                      type="password"
+                    />
+                  </div>
+                  <button
+                    className="button puppleButton"
+                    type="submit"
+                    value="Sign in"
+                  >
+                    Sign up
+                  </button>
+                </form>
+              </div>,
+            ],
+            "className": "registerContent",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h3>
+                    * Free account
+                  </h3>,
+                  <p>
+                    Create a free account and have access to your emotions and thoughts on the go
+                  </p>,
+                  <hr />,
+                  <h3>
+                    * Instant notifications
+                  </h3>,
+                  <p>
+                    Get notifications prompting you to add entries to your diary on a daily basis
+                  </p>,
+                  <hr />,
+                  <h3>
+                    Already have an account ?
+                  </h3>,
+                  <p>
+                    <Link
+                      replace={false}
+                      to="/"
+                    >
+                       Sign in to your account 
+                    </Link>
+                  </p>,
+                ],
+                "className": "smallNotes registerPanel",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "* Free account",
+                  },
+                  "ref": null,
+                  "rendered": "* Free account",
+                  "type": "h3",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Create a free account and have access to your emotions and thoughts on the go",
+                  },
+                  "ref": null,
+                  "rendered": "Create a free account and have access to your emotions and thoughts on the go",
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": "hr",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "* Instant notifications",
+                  },
+                  "ref": null,
+                  "rendered": "* Instant notifications",
+                  "type": "h3",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Get notifications prompting you to add entries to your diary on a daily basis",
+                  },
+                  "ref": null,
+                  "rendered": "Get notifications prompting you to add entries to your diary on a daily basis",
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": "hr",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Already have an account ?",
+                  },
+                  "ref": null,
+                  "rendered": "Already have an account ?",
+                  "type": "h3",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <Link
+                      replace={false}
+                      to="/"
+                    >
+                       Sign in to your account 
+                    </Link>,
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": " Sign in to your account ",
+                      "replace": false,
+                      "to": "/",
+                    },
+                    "ref": null,
+                    "rendered": " Sign in to your account ",
+                    "type": [Function],
+                  },
+                  "type": "p",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <form
+                  className="registerForm"
+                  id="regForm"
+                  onSubmit={[MockFunction]}
+                >
+                  <div
+                    className="form-group"
+                  >
+                    <label
+                      htmlFor="name"
+                    >
+                      Name
+                    </label>
+                    <input
+                      className="formField"
+                      id="name"
+                      name="name"
+                      onChange={[MockFunction]}
+                      placeholder="Your name"
+                      required="required"
+                      type="text"
+                    />
+                  </div>
+                  <div
+                    className="form-group"
+                  >
+                    <input
+                      className="formField"
+                      name="email"
+                      onChange={[MockFunction]}
+                      placeholder="Email address"
+                      required="required"
+                      type="email"
+                    />
+                  </div>
+                  <div
+                    className="form-group"
+                  >
+                    <input
+                      className="formField"
+                      name="password"
+                      onChange={[MockFunction]}
+                      placeholder="Password"
+                      required="required"
+                      type="password"
+                    />
+                  </div>
+                  <button
+                    className="button puppleButton"
+                    type="submit"
+                    value="Sign in"
+                  >
+                    Sign up
+                  </button>
+                </form>,
+                "className": "col-sm-4 regSidebar",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <div
+                      className="form-group"
+                    >
+                      <label
+                        htmlFor="name"
+                      >
+                        Name
+                      </label>
+                      <input
+                        className="formField"
+                        id="name"
+                        name="name"
+                        onChange={[MockFunction]}
+                        placeholder="Your name"
+                        required="required"
+                        type="text"
+                      />
+                    </div>,
+                    <div
+                      className="form-group"
+                    >
+                      <input
+                        className="formField"
+                        name="email"
+                        onChange={[MockFunction]}
+                        placeholder="Email address"
+                        required="required"
+                        type="email"
+                      />
+                    </div>,
+                    <div
+                      className="form-group"
+                    >
+                      <input
+                        className="formField"
+                        name="password"
+                        onChange={[MockFunction]}
+                        placeholder="Password"
+                        required="required"
+                        type="password"
+                      />
+                    </div>,
+                    <button
+                      className="button puppleButton"
+                      type="submit"
+                      value="Sign in"
+                    >
+                      Sign up
+                    </button>,
+                  ],
+                  "className": "registerForm",
+                  "id": "regForm",
+                  "onSubmit": [MockFunction],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <label
+                          htmlFor="name"
+                        >
+                          Name
+                        </label>,
+                        <input
+                          className="formField"
+                          id="name"
+                          name="name"
+                          onChange={[MockFunction]}
+                          placeholder="Your name"
+                          required="required"
+                          type="text"
+                        />,
+                      ],
+                      "className": "form-group",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Name",
+                          "htmlFor": "name",
+                        },
+                        "ref": null,
+                        "rendered": "Name",
+                        "type": "label",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "className": "formField",
+                          "id": "name",
+                          "name": "name",
+                          "onChange": [MockFunction],
+                          "placeholder": "Your name",
+                          "required": "required",
+                          "type": "text",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "input",
+                      },
+                    ],
+                    "type": "div",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <input
+                        className="formField"
+                        name="email"
+                        onChange={[MockFunction]}
+                        placeholder="Email address"
+                        required="required"
+                        type="email"
+                      />,
+                      "className": "form-group",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": "formField",
+                        "name": "email",
+                        "onChange": [MockFunction],
+                        "placeholder": "Email address",
+                        "required": "required",
+                        "type": "email",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "input",
+                    },
+                    "type": "div",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <input
+                        className="formField"
+                        name="password"
+                        onChange={[MockFunction]}
+                        placeholder="Password"
+                        required="required"
+                        type="password"
+                      />,
+                      "className": "form-group",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": "formField",
+                        "name": "password",
+                        "onChange": [MockFunction],
+                        "placeholder": "Password",
+                        "required": "required",
+                        "type": "password",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "input",
+                    },
+                    "type": "div",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Sign up",
+                      "className": "button puppleButton",
+                      "type": "submit",
+                      "value": "Sign in",
+                    },
+                    "ref": null,
+                    "rendered": "Sign up",
+                    "type": "button",
+                  },
+                ],
+                "type": "form",
+              },
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="register"
+        >
+          <div
+            className="col-sm-5 registerHeader"
+          >
+            <h2>
+              Sign up
+            </h2>
+          </div>
+          <div
+            className="registerContent"
+          >
+            <div
+              className="smallNotes registerPanel"
+            >
+              <h3>
+                * Free account
+              </h3>
+              <p>
+                Create a free account and have access to your emotions and thoughts on the go
+              </p>
+              <hr />
+              <h3>
+                * Instant notifications
+              </h3>
+              <p>
+                Get notifications prompting you to add entries to your diary on a daily basis
+              </p>
+              <hr />
+              <h3>
+                Already have an account ?
+              </h3>
+              <p>
+                <Link
+                  replace={false}
+                  to="/"
+                >
+                   Sign in to your account 
+                </Link>
+              </p>
+            </div>
+            <div
+              className="col-sm-4 regSidebar"
+            >
+              <form
+                className="registerForm"
+                id="regForm"
+                onSubmit={[MockFunction]}
+              >
+                <div
+                  className="form-group"
+                >
+                  <label
+                    htmlFor="name"
+                  >
+                    Name
+                  </label>
+                  <input
+                    className="formField"
+                    id="name"
+                    name="name"
+                    onChange={[MockFunction]}
+                    placeholder="Your name"
+                    required="required"
+                    type="text"
+                  />
+                </div>
+                <div
+                  className="form-group"
+                >
+                  <input
+                    className="formField"
+                    name="email"
+                    onChange={[MockFunction]}
+                    placeholder="Email address"
+                    required="required"
+                    type="email"
+                  />
+                </div>
+                <div
+                  className="form-group"
+                >
+                  <input
+                    className="formField"
+                    name="password"
+                    onChange={[MockFunction]}
+                    placeholder="Password"
+                    required="required"
+                    type="password"
+                  />
+                </div>
+                <button
+                  className="button puppleButton"
+                  type="submit"
+                  value="Sign in"
+                >
+                  Sign up
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>,
+        "className": "container",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="col-sm-5 registerHeader"
+            >
+              <h2>
+                Sign up
+              </h2>
+            </div>,
+            <div
+              className="registerContent"
+            >
+              <div
+                className="smallNotes registerPanel"
+              >
+                <h3>
+                  * Free account
+                </h3>
+                <p>
+                  Create a free account and have access to your emotions and thoughts on the go
+                </p>
+                <hr />
+                <h3>
+                  * Instant notifications
+                </h3>
+                <p>
+                  Get notifications prompting you to add entries to your diary on a daily basis
+                </p>
+                <hr />
+                <h3>
+                  Already have an account ?
+                </h3>
+                <p>
+                  <Link
+                    replace={false}
+                    to="/"
+                  >
+                     Sign in to your account 
+                  </Link>
+                </p>
+              </div>
+              <div
+                className="col-sm-4 regSidebar"
+              >
+                <form
+                  className="registerForm"
+                  id="regForm"
+                  onSubmit={[MockFunction]}
+                >
+                  <div
+                    className="form-group"
+                  >
+                    <label
+                      htmlFor="name"
+                    >
+                      Name
+                    </label>
+                    <input
+                      className="formField"
+                      id="name"
+                      name="name"
+                      onChange={[MockFunction]}
+                      placeholder="Your name"
+                      required="required"
+                      type="text"
+                    />
+                  </div>
+                  <div
+                    className="form-group"
+                  >
+                    <input
+                      className="formField"
+                      name="email"
+                      onChange={[MockFunction]}
+                      placeholder="Email address"
+                      required="required"
+                      type="email"
+                    />
+                  </div>
+                  <div
+                    className="form-group"
+                  >
+                    <input
+                      className="formField"
+                      name="password"
+                      onChange={[MockFunction]}
+                      placeholder="Password"
+                      required="required"
+                      type="password"
+                    />
+                  </div>
+                  <button
+                    className="button puppleButton"
+                    type="submit"
+                    value="Sign in"
+                  >
+                    Sign up
+                  </button>
+                </form>
+              </div>
+            </div>,
+          ],
+          "className": "register",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <h2>
+                Sign up
+              </h2>,
+              "className": "col-sm-5 registerHeader",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Sign up",
+              },
+              "ref": null,
+              "rendered": "Sign up",
+              "type": "h2",
+            },
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div
+                  className="smallNotes registerPanel"
+                >
+                  <h3>
+                    * Free account
+                  </h3>
+                  <p>
+                    Create a free account and have access to your emotions and thoughts on the go
+                  </p>
+                  <hr />
+                  <h3>
+                    * Instant notifications
+                  </h3>
+                  <p>
+                    Get notifications prompting you to add entries to your diary on a daily basis
+                  </p>
+                  <hr />
+                  <h3>
+                    Already have an account ?
+                  </h3>
+                  <p>
+                    <Link
+                      replace={false}
+                      to="/"
+                    >
+                       Sign in to your account 
+                    </Link>
+                  </p>
+                </div>,
+                <div
+                  className="col-sm-4 regSidebar"
+                >
+                  <form
+                    className="registerForm"
+                    id="regForm"
+                    onSubmit={[MockFunction]}
+                  >
+                    <div
+                      className="form-group"
+                    >
+                      <label
+                        htmlFor="name"
+                      >
+                        Name
+                      </label>
+                      <input
+                        className="formField"
+                        id="name"
+                        name="name"
+                        onChange={[MockFunction]}
+                        placeholder="Your name"
+                        required="required"
+                        type="text"
+                      />
+                    </div>
+                    <div
+                      className="form-group"
+                    >
+                      <input
+                        className="formField"
+                        name="email"
+                        onChange={[MockFunction]}
+                        placeholder="Email address"
+                        required="required"
+                        type="email"
+                      />
+                    </div>
+                    <div
+                      className="form-group"
+                    >
+                      <input
+                        className="formField"
+                        name="password"
+                        onChange={[MockFunction]}
+                        placeholder="Password"
+                        required="required"
+                        type="password"
+                      />
+                    </div>
+                    <button
+                      className="button puppleButton"
+                      type="submit"
+                      value="Sign in"
+                    >
+                      Sign up
+                    </button>
+                  </form>
+                </div>,
+              ],
+              "className": "registerContent",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <h3>
+                      * Free account
+                    </h3>,
+                    <p>
+                      Create a free account and have access to your emotions and thoughts on the go
+                    </p>,
+                    <hr />,
+                    <h3>
+                      * Instant notifications
+                    </h3>,
+                    <p>
+                      Get notifications prompting you to add entries to your diary on a daily basis
+                    </p>,
+                    <hr />,
+                    <h3>
+                      Already have an account ?
+                    </h3>,
+                    <p>
+                      <Link
+                        replace={false}
+                        to="/"
+                      >
+                         Sign in to your account 
+                      </Link>
+                    </p>,
+                  ],
+                  "className": "smallNotes registerPanel",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "* Free account",
+                    },
+                    "ref": null,
+                    "rendered": "* Free account",
+                    "type": "h3",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Create a free account and have access to your emotions and thoughts on the go",
+                    },
+                    "ref": null,
+                    "rendered": "Create a free account and have access to your emotions and thoughts on the go",
+                    "type": "p",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {},
+                    "ref": null,
+                    "rendered": null,
+                    "type": "hr",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "* Instant notifications",
+                    },
+                    "ref": null,
+                    "rendered": "* Instant notifications",
+                    "type": "h3",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Get notifications prompting you to add entries to your diary on a daily basis",
+                    },
+                    "ref": null,
+                    "rendered": "Get notifications prompting you to add entries to your diary on a daily basis",
+                    "type": "p",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {},
+                    "ref": null,
+                    "rendered": null,
+                    "type": "hr",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Already have an account ?",
+                    },
+                    "ref": null,
+                    "rendered": "Already have an account ?",
+                    "type": "h3",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <Link
+                        replace={false}
+                        to="/"
+                      >
+                         Sign in to your account 
+                      </Link>,
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": " Sign in to your account ",
+                        "replace": false,
+                        "to": "/",
+                      },
+                      "ref": null,
+                      "rendered": " Sign in to your account ",
+                      "type": [Function],
+                    },
+                    "type": "p",
+                  },
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <form
+                    className="registerForm"
+                    id="regForm"
+                    onSubmit={[MockFunction]}
+                  >
+                    <div
+                      className="form-group"
+                    >
+                      <label
+                        htmlFor="name"
+                      >
+                        Name
+                      </label>
+                      <input
+                        className="formField"
+                        id="name"
+                        name="name"
+                        onChange={[MockFunction]}
+                        placeholder="Your name"
+                        required="required"
+                        type="text"
+                      />
+                    </div>
+                    <div
+                      className="form-group"
+                    >
+                      <input
+                        className="formField"
+                        name="email"
+                        onChange={[MockFunction]}
+                        placeholder="Email address"
+                        required="required"
+                        type="email"
+                      />
+                    </div>
+                    <div
+                      className="form-group"
+                    >
+                      <input
+                        className="formField"
+                        name="password"
+                        onChange={[MockFunction]}
+                        placeholder="Password"
+                        required="required"
+                        type="password"
+                      />
+                    </div>
+                    <button
+                      className="button puppleButton"
+                      type="submit"
+                      value="Sign in"
+                    >
+                      Sign up
+                    </button>
+                  </form>,
+                  "className": "col-sm-4 regSidebar",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <div
+                        className="form-group"
+                      >
+                        <label
+                          htmlFor="name"
+                        >
+                          Name
+                        </label>
+                        <input
+                          className="formField"
+                          id="name"
+                          name="name"
+                          onChange={[MockFunction]}
+                          placeholder="Your name"
+                          required="required"
+                          type="text"
+                        />
+                      </div>,
+                      <div
+                        className="form-group"
+                      >
+                        <input
+                          className="formField"
+                          name="email"
+                          onChange={[MockFunction]}
+                          placeholder="Email address"
+                          required="required"
+                          type="email"
+                        />
+                      </div>,
+                      <div
+                        className="form-group"
+                      >
+                        <input
+                          className="formField"
+                          name="password"
+                          onChange={[MockFunction]}
+                          placeholder="Password"
+                          required="required"
+                          type="password"
+                        />
+                      </div>,
+                      <button
+                        className="button puppleButton"
+                        type="submit"
+                        value="Sign in"
+                      >
+                        Sign up
+                      </button>,
+                    ],
+                    "className": "registerForm",
+                    "id": "regForm",
+                    "onSubmit": [MockFunction],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <label
+                            htmlFor="name"
+                          >
+                            Name
+                          </label>,
+                          <input
+                            className="formField"
+                            id="name"
+                            name="name"
+                            onChange={[MockFunction]}
+                            placeholder="Your name"
+                            required="required"
+                            type="text"
+                          />,
+                        ],
+                        "className": "form-group",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "Name",
+                            "htmlFor": "name",
+                          },
+                          "ref": null,
+                          "rendered": "Name",
+                          "type": "label",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "className": "formField",
+                            "id": "name",
+                            "name": "name",
+                            "onChange": [MockFunction],
+                            "placeholder": "Your name",
+                            "required": "required",
+                            "type": "text",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": "input",
+                        },
+                      ],
+                      "type": "div",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": <input
+                          className="formField"
+                          name="email"
+                          onChange={[MockFunction]}
+                          placeholder="Email address"
+                          required="required"
+                          type="email"
+                        />,
+                        "className": "form-group",
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "className": "formField",
+                          "name": "email",
+                          "onChange": [MockFunction],
+                          "placeholder": "Email address",
+                          "required": "required",
+                          "type": "email",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "input",
+                      },
+                      "type": "div",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": <input
+                          className="formField"
+                          name="password"
+                          onChange={[MockFunction]}
+                          placeholder="Password"
+                          required="required"
+                          type="password"
+                        />,
+                        "className": "form-group",
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "className": "formField",
+                          "name": "password",
+                          "onChange": [MockFunction],
+                          "placeholder": "Password",
+                          "required": "required",
+                          "type": "password",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "input",
+                      },
+                      "type": "div",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Sign up",
+                        "className": "button puppleButton",
+                        "type": "submit",
+                        "value": "Sign in",
+                      },
+                      "ref": null,
+                      "rendered": "Sign up",
+                      "type": "button",
+                    },
+                  ],
+                  "type": "form",
+                },
+                "type": "div",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
