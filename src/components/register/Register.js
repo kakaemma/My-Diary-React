@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import registerUser from '../../actions/userActions';
+import { registerUser } from '../../actions/userActions';
 import RegistrationForm from '../forms/RegistrationForm';
 
 class Register extends Component {
@@ -52,9 +52,9 @@ class Register extends Component {
 Register.propTypes = {
   registerUser: PropTypes.func.isRequired,
   registrationSuccessful: PropTypes.bool.isRequired,
-  history: PropTypes.func.isRequired,
+  history: PropTypes.object.isRequired,
 };
-const mapStateToProps = state => ({
+export const mapStateToProps = state => ({
   registrationSuccessful: state.user.registrationSuccessful,
 });
 export { Register as RegisterTest };

@@ -3,7 +3,7 @@ import { shallow, configure } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import configureMockStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
-import { RegisterTest } from '../../components/register/Register';
+import { RegisterTest, mapStateToProps } from '../../components/register/Register';
 
 const middlewares = [thunk];
 const mockStore = configureMockStore(middlewares);
@@ -18,7 +18,7 @@ describe('Register', () => {
     handleSubmit: jest.fn(),
     handleChange: jest.fn(),
     registerUser: jest.fn(),
-    registrationsuccessful: false,
+    registrationSuccessful: false,
   };
   const getEvent = (name = '', value = '') => ({
     preventDefault: jest.fn(),
@@ -55,5 +55,12 @@ describe('Register', () => {
   it('should call registerUser when handleSubmit is called', () => {
     wrapper.instance().handleSubmit(getEvent());
     expect(props.registerUser).toBeCalled();
+  });
+  it('should mapSate to Props', () => {
+    const mockState = {
+      user: { registrationSuccessful: false },
+    };
+    const returnedValue = mapStateToProps(mockState);
+    expect(returnedValue).toEqual({ registrationSuccessful: false });
   });
 });

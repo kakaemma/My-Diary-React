@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import LoginForm from '../forms/LoginForm';
+import { loginUser } from '../../actions/userActions';
 
 class Login extends Component {
   constructor(props) {
@@ -8,6 +11,13 @@ class Login extends Component {
       email: '',
       password: '',
     };
+  }
+
+  componentWillReceiveProps(props) {
+    // console.log(nextProps);
+    if (props.isLoggedIn === true) {
+      props.history.push('/register');
+    }
   }
 
   handleChange = event => {
@@ -22,6 +32,8 @@ class Login extends Component {
       email,
       password,
     };
+    const { loginUser } = this.props;
+    loginUser(user);
   };
 
   render() {
@@ -36,4 +48,15 @@ class Login extends Component {
     );
   }
 }
-export default Login;
+
+Login.propTypes = {
+  loginUser: PropTypes.func.isRequired,
+  isLoggedIn: PropTypes.bool.isRequired,
+  history: PropTypes.object.isRequired,
+};
+
+const mapStateToProps = state => ({
+  isLoggedIn: state.user.isLoggedIn,
+});
+export { Login as LoginTest };
+export default connect(mapStateToProps, { loginUser })(Login);

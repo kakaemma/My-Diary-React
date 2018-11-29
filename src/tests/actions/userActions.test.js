@@ -1,10 +1,13 @@
 import MockAdapter from 'axios-mock-adapter';
 import thunk from 'redux-thunk';
 import configureMockStore from 'redux-mock-store';
-import registerUser from '../../actions/userActions';
+import { registerUser, loginUser } from '../../actions/userActions';
 import axiosInstance from '../../config/axiosInstance';
 import {
-  REGISTRATION_INITIATED, REGISTRATION_SUCCESS,
+  REGISTRATION_INITIATED,
+  REGISTRATION_SUCCESS,
+  LOGIN_INITIATED,
+  LOGIN_SUCCESS,
 } from '../../actions/types';
 
 describe('userActions', () => {
@@ -49,6 +52,41 @@ describe('userActions', () => {
     ];
     mock.onPost('auth/signup', userData).reply(400, response);
     store.dispatch(registerUser(userData))
+      .then(() => {
+        expect(store.getActions()).toEqual(expectedActions);
+      });
+  });
+  it('should login a user', () => {
+    const userData = {
+      email: 'test@gmail.com',
+      password: 'paswdr34',
+    };
+    const response = {
+      message: 'successfully login',
+    };
+    const expectedActions = [
+      { type: LOGIN_INITIATED },
+      { type: LOGIN_SUCCESS },
+    ];
+    mock.onPost('auth/login', userData).reply(200, response);
+    store.dispatch(loginUser(userData))
+      .then(() => {
+        expect(store.getActions()).toEqual(expectedActions);
+      });
+  });
+  it('it should not login a user with wrong details', () => {
+    const userData = {
+      email: 'wrongemail@gmail.com',
+      password: 'paswdr34',
+    };
+    const response = {
+      message: 'successfully login',
+    };
+    const expectedActions = [
+      { type: LOGIN_INITIATED },
+    ];
+    mock.onPost('auth/login', userData).reply(400, response);
+    store.dispatch(loginUser(userData))
       .then(() => {
         expect(store.getActions()).toEqual(expectedActions);
       });
