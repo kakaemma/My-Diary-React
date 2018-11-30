@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 
 const LoginForm = (props) => {
@@ -31,7 +32,7 @@ const LoginForm = (props) => {
             </form>
             <p className="panelFooter">
             New to My Diary ?
-              <span>Sign up</span>
+              <span><Link to="/register"> Signup </Link></span>
             </p>
           </div>
         </div>

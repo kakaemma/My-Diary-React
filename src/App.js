@@ -1,17 +1,20 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import store from './store';
 import Routes from './components/routes';
 import './assets/App.css';
 
 const App = () => (
   <Provider store={store}>
-    <React.Fragment>
-      <BrowserRouter>
+    <BrowserRouter>
+      <React.Fragment>
+        <ToastContainer />
         <Routes />
-      </BrowserRouter>
-    </React.Fragment>
+      </React.Fragment>
+    </BrowserRouter>
   </Provider>
 );
 
