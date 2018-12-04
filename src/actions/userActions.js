@@ -3,9 +3,12 @@ import axiosInstance from '../config/axiosInstance';
 import {
   registrationInitiated,
   registrationSuccess,
+  loginInitiated,
+  loginSuccess,
+  loginError,
 } from './actionCreators';
 
-const registerUser = userData => dispatch => {
+export const registerUser = userData => dispatch => {
   dispatch(registrationInitiated());
   return axiosInstance.post('auth/signup', userData)
     .then(response => {
@@ -15,4 +18,15 @@ const registerUser = userData => dispatch => {
       toast.error('Error in registration', { autoClose: 3500, hideProgressBar: true });
     });
 };
-export default registerUser;
+
+export const loginUser = userData => dispatch => {
+  dispatch(loginInitiated());
+  return axiosInstance.post('auth/login', userData)
+    .then((response) => {
+      dispatch(loginSuccess());
+      toast.success('Login successful', { autoClose: 3500, hideProgressBar: true });
+    }).catch(() => {
+      dispatch(loginError);
+      toast.error('Invalid email or password', { autoClose: 3500, hideProgressBar: true });
+    });
+};

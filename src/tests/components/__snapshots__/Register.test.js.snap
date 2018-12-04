@@ -12,7 +12,7 @@ ShallowWrapper {
       }
     }
     registerUser={[MockFunction]}
-    registrationsuccessful={false}
+    registrationSuccessful={false}
     store={
       Object {
         "clearActions": [Function],

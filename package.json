@@ -14,16 +14,19 @@
     "react-toastify": "^4.4.3",
     "redux": "^4.0.1",
     "redux-mock-store": "^1.5.3",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "serve": "^9.4.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "serve": "serve -s build",
     "lint": "eslint src",
     "coverage": "react-scripts test --coverage",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "mydiary": "npm install;npm start"
+    "mydiary": "npm install;npm start",
+    "heroku-postbuild": "npm run build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -39,11 +42,7 @@
     "coveralls": "^3.0.2",
     "enzyme": "^3.7.0",
     "enzyme-adapter-react-16": "^1.7.0",
-    "eslint-config-airbnb": "^17.1.0",
-    "eslint-config-react-app": "^3.0.5",
-    "eslint-plugin-flowtype": "^3.2.0",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-jsx-a11y": "^6.1.2",
-    "eslint-plugin-react": "^7.11.1"
+    "eslint": "^5.3.0",
+    "eslint-config-airbnb": "^17.1.0"
   }
 }
