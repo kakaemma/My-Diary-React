@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-
+import Loader from 'react-loader';
 
 const LoginForm = (props) => {
-  const { onChange, handleSubmit } = props;
+  const { onChange, handleSubmit, loading } = props;
   return (
     <div className="container">
       <div className="row">
@@ -28,7 +28,9 @@ const LoginForm = (props) => {
                   <input type="password" name="password" onChange={onChange} id="password" className="formField" placeholder="Password" />
                 </div>
               </div>
-              <button className="button puppleButton" type="submit">Sign in</button>
+              <Loader loaded={!loading}>
+                <button className="button puppleButton" type="submit">Sign in</button>
+              </Loader>
             </form>
             <p className="panelFooter">
             New to My Diary ?
@@ -43,6 +45,7 @@ const LoginForm = (props) => {
 LoginForm.propTypes = {
   onChange: PropTypes.func.isRequired,
   handleSubmit: PropTypes.func.isRequired,
+  loading: PropTypes.bool.isRequired,
 };
 
 export default LoginForm;

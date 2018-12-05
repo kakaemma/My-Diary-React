@@ -4,6 +4,7 @@ import {
   LOGIN_ERROR,
   REGISTRATION_INITIATED,
   REGISTRATION_SUCCESS,
+  REGISTRATION_ERROR,
 } from './types';
 
 export const loginInitiated = () => ({
@@ -24,4 +25,7 @@ export const registrationInitiated = () => ({
 });
 export const registrationSuccess = () => ({
   type: REGISTRATION_SUCCESS,
+});
+export const registrationError = () => ({
+  type: REGISTRATION_ERROR,
 });

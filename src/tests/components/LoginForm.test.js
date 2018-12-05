@@ -8,6 +8,7 @@ configure({ adapter: new Adapter() });
 describe('LoginForm', () => {
   let wrapper;
   const props = {
+    loading: false,
     handleSubmit: jest.fn(),
     onChange: jest.fn(),
   };

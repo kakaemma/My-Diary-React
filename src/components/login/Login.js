@@ -14,7 +14,6 @@ class Login extends Component {
   }
 
   componentWillReceiveProps(props) {
-    // console.log(nextProps);
     if (props.isLoggedIn === true) {
       props.history.push('/register');
     }
@@ -37,11 +36,17 @@ class Login extends Component {
   };
 
   render() {
+    const { loading } = this.props;
+
     return (
       <div className="common">
         <div className="common-login-register">
           <div className="container">
-            <LoginForm onChange={this.handleChange} handleSubmit={this.handleSubmit} />
+            <LoginForm
+              onChange={this.handleChange}
+              handleSubmit={this.handleSubmit}
+              loading={loading}
+            />
           </div>
         </div>
       </div>
@@ -53,10 +58,12 @@ Login.propTypes = {
   loginUser: PropTypes.func.isRequired,
   isLoggedIn: PropTypes.bool.isRequired,
   history: PropTypes.object.isRequired,
+  loading: PropTypes.bool.isRequired,
 };
 
 const mapStateToProps = state => ({
   isLoggedIn: state.user.isLoggedIn,
+  loading: state.user.loading,
 });
 export { Login as LoginTest };
 export default connect(mapStateToProps, { loginUser })(Login);

@@ -6,8 +6,10 @@ import axiosInstance from '../../config/axiosInstance';
 import {
   REGISTRATION_INITIATED,
   REGISTRATION_SUCCESS,
+  REGISTRATION_ERROR,
   LOGIN_INITIATED,
   LOGIN_SUCCESS,
+  LOGIN_ERROR,
 } from '../../actions/types';
 
 describe('userActions', () => {
@@ -45,10 +47,13 @@ describe('userActions', () => {
       password: 'paswdr34',
     };
     const response = {
-      message: 'successfully added',
+      message: 'registration error',
     };
     const expectedActions = [
       { type: REGISTRATION_INITIATED },
+      {
+        type: REGISTRATION_ERROR,
+      },
     ];
     mock.onPost('auth/signup', userData).reply(400, response);
     store.dispatch(registerUser(userData))
@@ -84,6 +89,7 @@ describe('userActions', () => {
     };
     const expectedActions = [
       { type: LOGIN_INITIATED },
+      { type: LOGIN_ERROR },
     ];
     mock.onPost('auth/login', userData).reply(400, response);
     store.dispatch(loginUser(userData))

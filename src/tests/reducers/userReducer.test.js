@@ -5,6 +5,7 @@ import {
   LOGIN_ERROR,
   REGISTRATION_INITIATED,
   REGISTRATION_SUCCESS,
+  REGISTRATION_ERROR,
 } from '../../actions/types';
 import userReducer from '../../reducers/userReducer';
 
@@ -72,6 +73,16 @@ describe('userReducer', () => {
     expect(currentState).toEqual({
       ...initialState,
       registrationSuccessful: true,
+    });
+  });
+  it('should set loading to false when there is an eeror', () => {
+    const registrationError = {
+      type: REGISTRATION_ERROR,
+    };
+    const currentState = userReducer(initialState, registrationError);
+    expect(currentState).toEqual({
+      ...initialState,
+      loading: false,
     });
   });
 });

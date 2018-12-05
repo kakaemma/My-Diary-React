@@ -10,6 +10,7 @@ describe('RegistrationForm', () => {
   const props = {
     handleSubmit: jest.fn(),
     onchange: jest.fn(),
+    loading: false,
   };
   beforeEach(() => {
     wrapper = shallow(<RegistrationForm {...props} />);

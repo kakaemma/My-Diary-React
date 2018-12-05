@@ -14,6 +14,7 @@ describe('Login', () => {
   const history = { push: jest.fn() };
   const props = {
     history,
+    loading: false,
     handleChange: jest.fn(),
     handleSubmit: jest.fn(),
     isLoggedIn: false,
