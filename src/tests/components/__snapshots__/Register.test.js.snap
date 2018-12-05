@@ -11,6 +11,7 @@ ShallowWrapper {
         "push": [MockFunction],
       }
     }
+    loading={false}
     registerUser={[MockFunction]}
     registrationSuccessful={false}
     store={
@@ -45,6 +46,7 @@ ShallowWrapper {
         >
           <registrationForm
             handleSubmit={[Function]}
+            loading={false}
             onchange={[Function]}
           />
         </div>
@@ -62,6 +64,7 @@ ShallowWrapper {
         >
           <registrationForm
             handleSubmit={[Function]}
+            loading={false}
             onchange={[Function]}
           />
         </div>,
@@ -75,6 +78,7 @@ ShallowWrapper {
         "props": Object {
           "children": <registrationForm
             handleSubmit={[Function]}
+            loading={false}
             onchange={[Function]}
           />,
           "className": "container",
@@ -86,6 +90,7 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "handleSubmit": [Function],
+            "loading": false,
             "onchange": [Function],
           },
           "ref": null,
@@ -112,6 +117,7 @@ ShallowWrapper {
           >
             <registrationForm
               handleSubmit={[Function]}
+              loading={false}
               onchange={[Function]}
             />
           </div>
@@ -129,6 +135,7 @@ ShallowWrapper {
           >
             <registrationForm
               handleSubmit={[Function]}
+              loading={false}
               onchange={[Function]}
             />
           </div>,
@@ -142,6 +149,7 @@ ShallowWrapper {
           "props": Object {
             "children": <registrationForm
               handleSubmit={[Function]}
+              loading={false}
               onchange={[Function]}
             />,
             "className": "container",
@@ -153,6 +161,7 @@ ShallowWrapper {
             "nodeType": "function",
             "props": Object {
               "handleSubmit": [Function],
+              "loading": false,
               "onchange": [Function],
             },
             "ref": null,

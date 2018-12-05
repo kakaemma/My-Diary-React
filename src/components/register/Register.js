@@ -38,11 +38,16 @@ class Register extends Component {
   };
 
   render() {
+    const { loading } = this.props;
     return (
       <div className="common">
         <div className="common-login-register">
           <div className="container">
-            <RegistrationForm onchange={this.handleChange} handleSubmit={this.handleSubmit} />
+            <RegistrationForm
+              onchange={this.handleChange}
+              handleSubmit={this.handleSubmit}
+              loading={loading}
+            />
           </div>
         </div>
       </div>
@@ -53,9 +58,12 @@ Register.propTypes = {
   registerUser: PropTypes.func.isRequired,
   registrationSuccessful: PropTypes.bool.isRequired,
   history: PropTypes.object.isRequired,
+  loading: PropTypes.bool.isRequired,
+
 };
 export const mapStateToProps = state => ({
   registrationSuccessful: state.user.registrationSuccessful,
+  loading: state.user.loading,
 });
 export { Register as RegisterTest };
 export default connect(mapStateToProps, { registerUser })(Register);

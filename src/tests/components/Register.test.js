@@ -15,6 +15,7 @@ describe('Register', () => {
 
   const props = {
     history,
+    loading: false,
     handleSubmit: jest.fn(),
     handleChange: jest.fn(),
     registerUser: jest.fn(),

@@ -4,6 +4,7 @@ import {
   LOGIN_ERROR,
   REGISTRATION_INITIATED,
   REGISTRATION_SUCCESS,
+  REGISTRATION_ERROR,
 } from '../actions/types';
 
 const initialState = {
@@ -25,6 +26,11 @@ const userReducer = (state = initialState, action) => {
         ...state,
         registrationSuccessful: true,
       };
+    case REGISTRATION_ERROR:
+      return {
+        ...state,
+        loading: false,
+      };
     case LOGIN_INITIATED:
       return {
         ...state,
@@ -38,6 +44,7 @@ const userReducer = (state = initialState, action) => {
     case LOGIN_ERROR:
       return {
         ...state,
+        loading: false,
         logginError: action.payload,
       };
 

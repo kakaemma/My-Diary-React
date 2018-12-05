@@ -1,9 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import Loader from 'react-loader';
+
 
 const registrationForm = (props) => {
-  const { onchange, handleSubmit } = props;
+  const { onchange, handleSubmit, loading } = props;
   return (
 
     <div className="container">
@@ -36,7 +38,9 @@ const registrationForm = (props) => {
               <div className="form-group">
                 <input type="password" name="password" required="required" className="formField" onChange={onchange} placeholder="Password" />
               </div>
-              <button className="button puppleButton" type="submit" value="Sign in">Sign up</button>
+              <Loader loaded={!loading}>
+                <button className="button puppleButton" type="submit" value="Sign in">Sign up</button>
+              </Loader>
             </form>
           </div>
         </div>
@@ -48,6 +52,7 @@ const registrationForm = (props) => {
 registrationForm.propTypes = {
   onchange: PropTypes.func.isRequired,
   handleSubmit: PropTypes.func.isRequired,
+  loading: PropTypes.bool.isRequired,
 };
 
 export default registrationForm;
