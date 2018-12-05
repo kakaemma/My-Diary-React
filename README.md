@@ -27,8 +27,59 @@ To install all dependecies and run application, type the command below in your t
 ``` npm run mydiary```
 - Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### The application is built with
-- HTML
-- CSS
-- REACT
-- REDUX
+#### File Organisation
+```
+.
+├── .circleci
+│   └── config.yml
+├── .eslintrc
+├── .gitignore
+├── .travis.yml
+├── README.md
+├── package-lock.json
+├── package.json
+├── public
+│   └── index.html
+└── src
+    ├── App.js
+    ├── actions
+    │   ├── actionCreators.js
+    │   ├── types.js
+    │   └── userActions.js
+    ├── assets
+    │   └── App.css
+    ├── components
+    │   ├── forms
+    │   │   ├── LoginForm.js
+    │   │   └── RegistrationForm.js
+    │   ├── login
+    │   │   └── Login.js
+    │   ├── register
+    │   │   └── Register.js
+    │   └── routes
+    │       └── index.js
+    ├── config
+    │   └── axiosInstance.js
+    ├── index.js
+    ├── reducers
+    │   ├── rootReducer.js
+    │   └── userReducer.js
+    ├── store.js
+    └── tests
+        ├── App.test.js
+        ├── actions
+        │   └── userActions.test.js
+        ├── components
+        │   ├── Login.test.js
+        │   ├── LoginForm.test.js
+        │   ├── Register.test.js
+        │   └── RegistrationFrom.test.js
+        ├── index.test.js
+        └── reducers
+            └── userReducer.test.js
+```
+#### Deployment
+The application is hosted at https://mydiary-react.herokuapp.com/
+
+#### The application is built with
+- REACT REDUX
