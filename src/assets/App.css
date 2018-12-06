@@ -187,3 +187,8 @@ p{
   margin-right: 16px;
   padding-bottom: 10px;
 }
+@media screen and (max-width: 600px) {
+  body {
+    background-color: #79589f;
+  }
+}
