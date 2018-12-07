@@ -15,7 +15,7 @@ class Login extends Component {
 
   componentWillReceiveProps(props) {
     if (props.isLoggedIn === true) {
-      props.history.push('/register');
+      props.history.push('/dasboard');
     }
   }
 
